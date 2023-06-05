@@ -3,5 +3,5 @@ define service {
     use                     generic-service           ; Name of service template to use
     host_name               monclient01
     service_description     NCPA Load
-    check_command   check_ncpa!-v!-M 'plugins/check_load'!-a '-w 1,1,1 -c 2,2,2'
+    check_command   check_ncpa!-M 'plugins/check_load/'!'-a -w 1,1,1 -c 2,2,2'
 }
